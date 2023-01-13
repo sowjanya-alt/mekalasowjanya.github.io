@@ -4,65 +4,170 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        h1{
-            background-image: url(patter.jpeg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 200px;
-            color: goldenrod;
-            font-size: 100px;
-            text-align: center;
-            padding: 40px;
-            
-        }
-        h2{
-            font-size: 50px;
-            color: white;
-        }
-        h3{
-            font-size: 50px;
-            color: white;
-        }
-        h4{
-            font-size: 50px;
-            color: white;
-        }
-        b{
-            font-size: 30px;
-
-        }
-        h6{
-            font-size: 30px;
-        }
-        p{
-            font-size: 30px;
-        }
-        h5{
-            font-size: 30px;
-        }
-        
-    </style>
+    <title>COLMARACADMY</title>
+    <link href="favicon.png" rel="icon" type="image/x-icon">
+    <link href="resource/index.css" rel="stylesheet" type="text/css">
+    
 </head>
 <body>
-    <h1>Dasmoto's Art &<br>
-         Crafts</h1>
-    <h2 style="background-color: lightgreen;">Brushes</h2>
-<img src="hacksa.jpeg" alt=" " width="400px" height="350px"><br>
-      <b>  Hacksaw Brushes</b>
-<p>Made of the highest quality oak, Hacksaw brushes are know for their weight and ability 
-    to hold paint in large amounts. Avaliable in different in different sizes.<span style="color: blue;"> Starting at $3.00 / brush.</span></p>
-<h3 style="background-color: brown;">Frames</h3>
-<img src="frame.jpeg" alt="" width="400px" height="350px"><br>
-        <h6>Art Frames(assorted)</h6>
-<p>Assorted frames made of different material,inculding MDF, birchwood,and PDE.
-    Select frames can be sanded and painted according to your needs.<span style="color: blue;">Starting at $2.00 / frame.</span></p>
-    <h4 style="background-color: skyblue;">Paint</h4>
-<img src="finnis.jpeg" alt="" width="400px" height="350px">
-<h5>Clean Finish Paint</h5>
-<p>Imported paint from Finland.Over256 colors available in-store, varying in quantity(1 oz. to 8 oz.).
-     Clean Finnish Paint microbinds to canvas, increasing the finish and longevity of any artwork.<span style="color: blue;">  Starting at $5.00 / tube.</span></p>
+     <!-- Header -->
+     <header>
+        <div class="desktop">
+            <div class="logo">
+                <img src="resource/assests/ic-logo.svg"> <span><strong>COLMAR</strong>ACADEMY</span>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">On campus</a>
+                    </li>
+                    <li>
+                        <a href="#"> or companies</a>
+                    </li>
+                    <li>
+                        <a href="#">Online</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign in</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="mobile">
+            <ul>
+                <li><img src="resource/assests/banner.jpg"></li>
+                <li><img src="resource/assests/course-business.jpg"></li>
+                <li><img src="resource/assests/course-computer-art.jpg"></li>
+                <li><img src="resource/assests/course-data.jpg"></li>
+            </ul>
+        </div>
+    </header>
+  
+  <!-- Banner -->
+    <div class="flex-content" id="banner">
+        <div class="media-container main-content"><img src="resource/assests/banner.jpg"></div>
+        <div class="supporting-content">
+            <h3>Learn something new every day</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p><a class="button" href="#">Start here</a>
+        </div>
+    </div>
+  
+  <!-- Information -->
+    <div class="flex-content" id="information-section">
+        <div class="main-content">
+            <div class="media-container"><img src="resource/assests/information-main.jpg"></div>
+            <h3>It doesn't hurt to keep practicing</h3>
+            <p>"I told my manager I wanted to learn design and shared ways it could be helpful in my current role. He responded right away, said, 'This is awesome,' and my company paid for the course."</p>
+        </div>
+        <div class="supporting-content">
+            <div class="content-image-box">
+                <div class="media-container"><img class="desktop" src="resource/assests/information-orientation.jpg"> <img class="mobile" src="resource/assests/information-campus.jpg"></div>
+                <div class="text-content">
+                    <h4>Orientation date</h4>
+                    <p>Tue 10/11 & Wed 10/12: 8am - 3pm</p><a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="content-image-box">
+                <div class="media-container"><img class="desktop" src="resource/assests/information-campus-mobile.jpg"> <img class="mobile" src="resource/assests/information-campus-mobile.jpg"></div>
+                <div class="text-content">
+                    <h4>Our campus</h4>
+                    <p>Find which campus is close by you</p><a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="content-image-box">
+                <div class="media-container"><img class="desktop" src="resource/assests/information-guest-lecture.jpg"> <img class="mobile" src="resource/assests/information-guest-lecture.jpg"></div>
+                <div class="text-content">
+                    <h4>Our guest lecture</h4>
+                    <p>Join a keynote with Oliver Sack about music in medical treatment</p><a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+  <!-- Courses -->
+    <div id="courses-section">
+        <h2>Start learning</h2>
+        <div class="courses-row">
+            <a class="course" href="#">
+            <div class="media-container"><img src="resource/assests/course-software.jpg"></div>
+            <div class="text-content">
+                <h3>Software engineering</h3>
+                <h4>COURSES</h4>
+                <p>Web Development, Mobile Development, iOT, APIs</p>
+            </div></a> <a class="course" href="#">
+            <div class="media-container"><img src="resource/assests/course-computer-art.jpg"></div>
+            <div class="text-content">
+                <h3>Computer art</h3>
+                <h4>COURSES</h4>
+                <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+            </div></a> <a class="course" href="#">
+            <div class="media-container"><img src="resource/assests/course-design.jpg"></div>
+            <div class="text-content">
+                <h3>Design</h3>
+                <h4>COURSES</h4>
+                <p>User Experience Design, User Research, Visual Design</p>
+            </div></a>
+        </div>
+        <div class="courses-row">
+            <a class="course" href="#">
+            <div class="media-container"><img src="resource/assests/course-data.jpg"></div>
+            <div class="text-content">
+                <h3>Data</h3>
+                <h4>COURSES</h4>
+                <p>Data Science, Big Data, SQL, Data Visualization</p>
+            </div></a> <a class="course" href="#">
+            <div class="media-container"><img src="resource/assests/course-business.jpg"></div>
+            <div class="text-content">
+                <h3>Business</h3>
+                <h4>COURSES</h4>
+                <p>Product Development, Business Development, Startup</p>
+            </div></a> <a class="course" href="#">
+            <div class="media-container"><img src="resource/assests/course-marketing.jpg"></div>
+            <div class="text-content">
+                <h3>Marketing</h3>
+                <h4>COURSES</h4>
+                <p>Analytics, Content Marketing, Mobile Marketing</p>
+            </div></a>
+        </div>
+    </div>
+  
+  <!-- Thesis -->
+    <div id="thesis-section">
+        <h2>Thesis exhibits</h2>
+        <div class="flex-content">
+            <div class="main-content">
+                <div class="media-container">
+                    <video controls="" src="resource/assests/thesis.mp4">Video could not be loaded.</video>
+                </div>
+                <h3>Reimagine urban transportation</h3>
+                <p>"Curabitur vitae libero in ipsum portitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, effcitur dolor consequat, tristque ligula."</p>
+            </div>
+            <div class="supporting-content">
+                <div class="content-image-box">
+                    <div class="media-container"><img src="resource/assests/thesis-fisma.jpg"></div>
+                    <div class="text-content">
+                        <h4>Fisma: Design and Prototype</h4>
+                        <p>Designer showcase of new prototype product</p>
+                    </div>
+                </div>
+                <div class="content-image-box">
+                    <div class="media-container"><img src="resource/assests/thesis-now-and-then.jpg"></div>
+                    <div class="text-content">
+                        <h4>Now and then</h4>
+                        <p>Research study about New York</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+  <!-- Footer -->
+    <footer>
+        <span class="copyright">© 2016 Colmar Academy. All rights reserved</span> <a href="#">Terms</a> <a href="#">Privacy</a>
+    </footer>
+</body>
+</html>
 
 </body>
 </html>
+    
